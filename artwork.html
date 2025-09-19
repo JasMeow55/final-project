@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Gallery - Cat Art Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+</head>
+<nav class="navigation">
+    <div class="container">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About me</a></li>
+            <li><a href="artwork.html" class="nav-link active">Artwork</a></li>
+            <li><a href="crochet.html" class="nav-link">Crochet</a></li>
+            <li><a href="#cats" class="nav-link">Cats!</a></li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="cat-face" id="catFace">
+                <div class="cat-ears">
+                    <div class="ear ear-left"></div>
+                    <div class="ear ear-right"></div>
+                </div>
+                <div class="cat-head">
+                    <div class="cat-eyes">
+                        <div class="eye eye-left">
+                            <div class="pupil" id="leftPupil"></div>
+                        </div>
+                        <div class="eye eye-right">
+                            <div class="pupil" id="rightPupil"></div>
+                        </div>
+                    </div>
+                    <div class="cat-nose"></div>
+                    <div class="cat-mouth">
+                        <div class="mouth-left"></div>
+                        <div class="mouth-right"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="main-title">My Artwork Collection</h1>
+        </div>
+    </header>
+
+
+    <main class="main-content">
+        <div class="container">
+            <section class="gallery-section">
+                <h2 class="section-title">Complete Artwork Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Abstract Painting 1" data-lightbox="artwork" data-title="Abstract Expression - Acrylic on Canvas">
+                        <div class="gallery-overlay">
+                            <h4>Abstract Expression</h4>
+                            <p>Acrylic on canvas, 24x36 inches</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Watercolor Landscape" data-lightbox="artwork" data-title="Serene Landscape - Watercolor">
+                        <div class="gallery-overlay">
+                            <h4>Serene Landscape</h4>
+                            <p>Watercolor on paper, 18x24 inches</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Digital Art" data-lightbox="artwork" data-title="Digital Dreams - Digital Illustration">
+                        <div class="gallery-overlay">
+                            <h4>Digital Dreams</h4>
+                            <p>Digital illustration, print available</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mixed Media" data-lightbox="artwork" data-title="Urban Collage - Mixed Media">
+                        <div class="gallery-overlay">
+                            <h4>Urban Collage</h4>
+                            <p>Mixed media collage, 20x30 inches</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Oil Painting" data-lightbox="artwork" data-title="Portrait Study - Oil on Canvas">
+                        <div class="gallery-overlay">
+                            <h4>Portrait Study</h4>
+                            <p>Oil on canvas, 16x20 inches</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Charcoal Drawing" data-lightbox="artwork" data-title="Still Life - Charcoal Drawing">
+                        <div class="gallery-overlay">
+                            <h4>Still Life Study</h4>
+                            <p>Charcoal on paper, 14x18 inches</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <a href="index.html" class="cta-button">Back to Home</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#contact" class="footer-link">Contact</a>
+                <span class="footer-divider">|</span>
+                <a href="#privacy" class="footer-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script>
+        // Mouse tracking for cat eyes (same as main page)
+        document.addEventListener('mousemove', function(e) {
+            const leftPupil = document.getElementById('leftPupil');
+            const rightPupil = document.getElementById('rightPupil');
+            
+            const leftEye = document.querySelector('.eye-left');
+            const rightEye = document.querySelector('.eye-right');
+            
+            if (leftEye && rightEye && leftPupil && rightPupil) {
+                const leftEyeRect = leftEye.getBoundingClientRect();
+                const rightEyeRect = rightEye.getBoundingClientRect();
+                
+                const leftEyeCenterX = leftEyeRect.left + leftEyeRect.width / 2;
+                const leftEyeCenterY = leftEyeRect.top + leftEyeRect.height / 2;
+                const leftAngle = Math.atan2(e.clientY - leftEyeCenterY, e.clientX - leftEyeCenterX);
+                const leftDistance = Math.min(8, Math.sqrt(Math.pow(e.clientX - leftEyeCenterX, 2) + Math.pow(e.clientY - leftEyeCenterY, 2)) / 10);
+                
+                const rightEyeCenterX = rightEyeRect.left + rightEyeRect.width / 2;
+                const rightEyeCenterY = rightEyeRect.top + rightEyeRect.height / 2;
+                const rightAngle = Math.atan2(e.clientY - rightEyeCenterY, e.clientX - rightEyeCenterX);
+                const rightDistance = Math.min(8, Math.sqrt(Math.pow(e.clientX - rightEyeCenterX, 2) + Math.pow(e.clientY - rightEyeCenterY, 2)) / 10);
+                
+                leftPupil.style.transform = `translate(${Math.cos(leftAngle) * leftDistance}px, ${Math.sin(leftAngle) * leftDistance}px)`;
+                rightPupil.style.transform = `translate(${Math.cos(rightAngle) * rightDistance}px, ${Math.sin(rightAngle) * rightDistance}px)`;
+            }
+        });
+
+        // Gallery item hover effects
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

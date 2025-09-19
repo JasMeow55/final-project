@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Gallery - Cat Art Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+</head>
+
+<nav class="navigation">
+    <div class="container">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About me</a></li>
+            <li><a href="artwork.html" class="nav-link">Artwork</a></li>
+            <li><a href="crochet.html" class="nav-link active">Crochet</a></li>
+            <li><a href="#cats" class="nav-link">Cats!</a></li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="cat-face" id="catFace">
+                <div class="cat-ears">
+                    <div class="ear ear-left"></div>
+                    <div class="ear ear-right"></div>
+                </div>
+                <div class="cat-head">
+                    <div class="cat-eyes">
+                        <div class="eye eye-left">
+                            <div class="pupil" id="leftPupil"></div>
+                        </div>
+                        <div class="eye eye-right">
+                            <div class="pupil" id="rightPupil"></div>
+                        </div>
+                    </div>
+                    <div class="cat-nose"></div>
+                    <div class="cat-mouth">
+                        <div class="mouth-left"></div>
+                        <div class="mouth-right"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="main-title">My Crochet Creations</h1>
+        </div>
+    </header>
+
+
+    <main class="main-content">
+        <div class="container">
+            <section class="gallery-section">
+                <h2 class="section-title">Handmade Crochet Collection</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Crochet Blanket" data-lightbox="crochet" data-title="Granny Square Blanket - Wool Yarn">
+                        <div class="gallery-overlay">
+                            <h4>Granny Square Blanket</h4>
+                            <p>100% wool yarn, queen size</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Amigurumi Cat" data-lightbox="crochet" data-title="Amigurumi Cat Family - Cotton Yarn">
+                        <div class="gallery-overlay">
+                            <h4>Amigurumi Cat Family</h4>
+                            <p>Cotton yarn, safety eyes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Winter Scarf" data-lightbox="crochet" data-title="Cable Knit Scarf - Alpaca Wool">
+                        <div class="gallery-overlay">
+                            <h4>Cable Knit Scarf</h4>
+                            <p>Alpaca wool blend, 6 feet long</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Baby Booties" data-lightbox="crochet" data-title="Baby Booties Set - Organic Cotton">
+                        <div class="gallery-overlay">
+                            <h4>Baby Booties Set</h4>
+                            <p>Organic cotton, newborn size</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Market Bag" data-lightbox="crochet" data-title="Mesh Market Bag - Recycled Cotton">
+                        <div class="gallery-overlay">
+                            <h4>Mesh Market Bag</h4>
+                            <p>Recycled cotton, eco-friendly</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cozy Beanie" data-lightbox="crochet" data-title="Ribbed Beanie - Merino Wool">
+                        <div class="gallery-overlay">
+                            <h4>Ribbed Beanie</h4>
+                            <p>Merino wool, one size fits all</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <a href="index.html" class="cta-button">Back to Home</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#contact" class="footer-link">Contact</a>
+                <span class="footer-divider">|</span>
+                <a href="#privacy" class="footer-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script>
+        // Mouse tracking for cat eyes (same as main page)
+        document.addEventListener('mousemove', function(e) {
+            const leftPupil = document.getElementById('leftPupil');
+            const rightPupil = document.getElementById('rightPupil');
+            
+            const leftEye = document.querySelector('.eye-left');
+            const rightEye = document.querySelector('.eye-right');
+            
+            if (leftEye && rightEye && leftPupil && rightPupil) {
+                const leftEyeRect = leftEye.getBoundingClientRect();
+                const rightEyeRect = rightEye.getBoundingClientRect();
+                
+                const leftEyeCenterX = leftEyeRect.left + leftEyeRect.width / 2;
+                const leftEyeCenterY = leftEyeRect.top + leftEyeRect.height / 2;
+                const leftAngle = Math.atan2(e.clientY - leftEyeCenterY, e.clientX - leftEyeCenterX);
+                const leftDistance = Math.min(8, Math.sqrt(Math.pow(e.clientX - leftEyeCenterX, 2) + Math.pow(e.clientY - leftEyeCenterY, 2)) / 10);
+                
+                const rightEyeCenterX = rightEyeRect.left + rightEyeRect.width / 2;
+                const rightEyeCenterY = rightEyeRect.top + rightEyeRect.height / 2;
+                const rightAngle = Math.atan2(e.clientY - rightEyeCenterY, e.clientX - rightEyeCenterX);
+                const rightDistance = Math.min(8, Math.sqrt(Math.pow(e.clientX - rightEyeCenterX, 2) + Math.pow(e.clientY - rightEyeCenterY, 2)) / 10);
+                
+                leftPupil.style.transform = `translate(${Math.cos(leftAngle) * leftDistance}px, ${Math.sin(leftAngle) * leftDistance}px)`;
+                rightPupil.style.transform = `translate(${Math.cos(rightAngle) * rightDistance}px, ${Math.sin(rightAngle) * rightDistance}px)`;
+            }
+        });
+
+        // Gallery item hover effects
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
