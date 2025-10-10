@@ -171,34 +171,34 @@
                 <!-- Slides Container -->
                 <div class="slides-wrapper">
                     <div class="slide active">
-                        <img src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Colorful Abstract Art" data-lightbox="featured" data-title="Abstract Painting - Mixed Media">
+                        <img src="Images_for_Final_project/Jester_artwork_website_large.png" alt="Colorful Abstract Art" data-lightbox="featured" data-title="Abstract Painting - Mixed Media">
                         <div class="slide-content">
-                            <h3>Abstract Expression</h3>
-                            <p>Mixed media artwork exploring color and form</p>
+                            <h3>Garftober 2025</h3>
+                            <p>Drawing Garfield everyday of October!</p>
                         </div>
                     </div>
                     
                     <div class="slide">
-                        <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Handmade Crochet Item" data-lightbox="featured" data-title="Handmade Crochet Blanket">
+                        <img src="Images_for_Final_project/Crochet_pokego_website_large.png" alt="Handmade Crochet Item" data-lightbox="featured" data-title="Handmade Crochet Blanket">
                         <div class="slide-content">
-                            <h3>Cozy Crochet</h3>
-                            <p>Handcrafted blanket with intricate patterns</p>
+                            <h3>Crochet Items</h3>
+                            <p>Pokemon Go Covers</p>
                         </div>
                     </div>
                     
                     <div class="slide">
-                        <img src="https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Digital Art Creation" data-lightbox="featured" data-title="Digital Art - Fantasy Landscape">
+                        <img src="Images_for_Final_project/Espeon_website_large.png" alt="Digital Art Creation" data-lightbox="featured" data-title="Digital Art - Fantasy Landscape">
                         <div class="slide-content">
-                            <h3>Digital Dreams</h3>
-                            <p>Fantasy landscape created with digital tools</p>
+                            <h3>Pokemom Art</h3>
+                            <p>Espeon Art</p>
                         </div>
                     </div>
                     
                     <div class="slide">
-                        <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Crochet Amigurumi" data-lightbox="featured" data-title="Cute Amigurumi Collection">
+                        <img src="Images_for_Final_project/Fox_crochet_website_large.png" alt="Crochet Amigurumi" data-lightbox="featured" data-title="Cute Amigurumi Collection">
                         <div class="slide-content">
-                            <h3>Amigurumi Friends</h3>
-                            <p>Adorable crocheted characters and animals</p>
+                            <h3>Amigurumi Animals</h3>
+                            <p>Little Fox</p>
                         </div>
                     </div>
                 </div>
@@ -236,10 +236,10 @@
                     </div>
                     
                     <div class="gallery-item">
-                        <img src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Watercolor Art" data-lightbox="artwork" data-title="Watercolor Landscape">
+                        <img src="Images_for_Final_project//Garfield_spider_website_small.png" alt="Watercolor Art" data-lightbox="artwork" data-title="Watercolor Landscape">
                         <div class="gallery-overlay">
-                            <h4>Watercolor Dreams</h4>
-                            <p>Watercolor technique</p>
+                            <h4>Garf Spider</h4>
+                            <p>Garftober Collection</p>
                         </div>
                     </div>
                     
@@ -406,15 +406,15 @@
         });
 
         // Gallery item hover effects
-        document.querySelectorAll('.gallery-item').forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-            });
-            
-            item.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
+        // document.querySelectorAll('.gallery-item').forEach(item => {
+        //    item.addEventListener('mouseenter', function() {
+        //        this.style.transform = 'translateY(-10px) scale(1.02)';
+        //    });
+        //    
+        //    item.addEventListener('mouseleave', function() {
+        //        this.style.transform = 'translateY(0) scale(1)';
+        //    });
+        // });
  
         // Enhanced SVG Cat Eye Tracking Animation
         function initCatEyeTracking() {
@@ -460,8 +460,8 @@
                 const leftDeltaY = mouseY - leftEyeCenter.y;
                 const leftDistance = Math.sqrt(leftDeltaX * leftDeltaX + leftDeltaY * leftDeltaY);
                 
-                let leftMoveX = 0;
-                let leftMoveY = 0;
+                let leftMoveX = 100;
+                let leftMoveY = 100;
                 
                 if (leftDistance > 0) {
                     leftMoveX = (leftDeltaX / leftDistance) * Math.min(maxPupilMove, leftDistance * 0.3);
@@ -473,8 +473,8 @@
                 const rightDeltaY = mouseY - rightEyeCenter.y;
                 const rightDistance = Math.sqrt(rightDeltaX * rightDeltaX + rightDeltaY * rightDeltaY);
                 
-                let rightMoveX = 0;
-                let rightMoveY = 0;
+                let rightMoveX = 100;
+                let rightMoveY = 100;
                 
                 if (rightDistance > 0) {
                     rightMoveX = (rightDeltaX / rightDistance) * Math.min(maxPupilMove, rightDistance * 0.3);
@@ -505,21 +505,21 @@
         document.addEventListener('DOMContentLoaded', initCatEyeTracking);
 
         // Gallery item hover effects
-        document.querySelectorAll('.gallery-item').forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-            });
+        // document.querySelectorAll('.gallery-item').forEach(item => {
+        //     item.addEventListener('mouseenter', function() {
+        //         this.style.transform = 'translateY(-10px) scale(1.02)';
+        //     });
             
-            item.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
+        //     item.addEventListener('mouseleave', function() {
+        //         this.style.transform = 'translateY(0) scale(1)';
+        //     });
+        // });
 
         // Lightbox configuration
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true
-        });
+        // lightbox.option({
+        //     'resizeDuration': 200,
+        //     'wrapAround': true
+        // });
     </script>
 </body>
 </html>
